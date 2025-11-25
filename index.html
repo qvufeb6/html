@@ -1,103 +1,41 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Trang Dự Án HTML – Portfolio đơn giản</title>
-  <meta name="description" content="Trang mẫu hoàn chỉnh cho dự án HTML: semantic, accessible, có hình ảnh, danh sách và link ngoài." />
-  <style>
-    /* Kiểu cơ bản để trang trông gọn đẹp khi demo */
-    body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; line-height: 1.5; margin: 0; padding: 0; color: #111; background:#f7f7fb; }
-    header, main, footer { max-width: 900px; margin: 0 auto; padding: 1rem; }
-    header { background: white; border-bottom: 1px solid #e6e6ee; }
-    nav ul { display:flex; gap: 0.5rem; list-style:none; padding:0; margin:0; }
-    nav a { text-decoration:none; padding: 0.25rem 0.5rem; color:#0b66c3; }
-    .hero { display:flex; gap:1rem; align-items:center; padding: 1rem 0; }
-    .hero img { width: 160px; height: 100px; object-fit:cover; border-radius:8px; }
-    .gallery { display:flex; gap:0.75rem; flex-wrap:wrap; }
-    .gallery img { width: 30%; min-width:180px; height:140px; object-fit:cover; border-radius:6px; }
-    article { background: white; padding:1rem; border-radius:8px; margin-top:1rem; }
-    footer { text-align:center; font-size:0.9rem; color:#555; padding:1.25rem 0; }
-    a.external::after { content: " ↗"; font-size:0.85em; }
-    @media (max-width:600px){ .hero { flex-direction:column; } .gallery img { width: 100%; } }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới Thiệu Lionel Messi</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Semantic header -->
-  <header>
-    <div class="hero" role="banner" aria-labelledby="site-title">
-      <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=800&q=60" 
-           alt="Bàn làm việc với laptop, sách và tách cà phê" />
-      <div>
-        <h1 id="site-title">Dự án HTML – Trang Mẫu (Portfolio)</h1>
-        <p>Trang mẫu thực hành HTML: semantic, accessible, có hình, danh sách và link ngoài.</p>
-      </div>
-    </div>
+    <header>
+        <h1>Lionel Messi</h1>
+        <p>Huyền thoại bóng đá thế giới</p>
+    </header>
 
-    <!-- Semantic navigation -->
-    <nav aria-label="Điều hướng chính">
-      <ul>
-        <li><a href="#about">Giới thiệu</a></li>
-        <li><a href="#gallery">Thư viện</a></li>
-        <li><a href="#resources">Tài nguyên</a></li>
-      </ul>
-    </nav>
-  </header>
+    <section class="intro">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg" alt="Messi">
+        <div class="info">
+            <h2>Giới thiệu</h2>
+            <p>
+                Lionel Andrés Messi, sinh ngày 24/6/1987, là cầu thủ bóng đá người Argentina, 
+                được xem là một trong những cầu thủ vĩ đại nhất lịch sử bóng đá thế giới.
+            </p>
+        </div>
+    </section>
 
-  <!-- Semantic main (bắt buộc) -->
-  <main id="main-content" role="main">
-    <!-- Article (thêm semantic tag thứ 3) -->
-    <article id="about" aria-labelledby="about-title">
-      <h2 id="about-title">1. Giới thiệu ngắn</h2>
-      <p>Trang này là ví dụ hoàn chỉnh cho bài tập cuối môn HTML. Nó chứa các phần semantic, hình ảnh với alt mô tả, danh sách và ít nhất một liên kết bên ngoài.</p>
-
-      <!-- Danh sách (ít nhất 3 item) -->
-      <section aria-labelledby="features-title">
-        <h3 id="features-title">2. Những tính năng của trang</h3>
+    <section class="achievements">
+        <h2>Thành tựu nổi bật</h2>
         <ul>
-          <li>Structure hợp lệ: doctype, head, title, main, header, footer, article.</li>
-          <li>Hình ảnh có thuộc tính <code>alt</code> mô tả cho accessibility.</li>
-          <li>Danh sách với ít nhất 3 phần tử và một liên kết ngoài hợp lệ.</li>
+            <li>8 Quả bóng vàng Ballon d'Or</li>
+            <li>Vô địch World Cup 2022</li>
+            <li>4 Champions League cùng Barcelona</li>
+            <li>10 La Liga</li>
+            <li>Top ghi bàn nhiều nhất lịch sử Barcelona</li>
         </ul>
-      </section>
-    </article>
-
-    <!-- Thư viện hình ảnh (ít nhất 3 images) -->
-    <section id="gallery" aria-labelledby="gallery-title">
-      <h2 id="gallery-title">3. Thư viện ảnh</h2>
-      <p>Ba hình ảnh dưới đây đều có <code>alt</code> mô tả, không bị hỏng và lấy từ Unsplash (liên kết trực tiếp đến ảnh).</p>
-      <div class="gallery" role="list">
-        <img role="listitem"
-             src="https://images.unsplash.com/photo-1506765515384-028b60a970df?auto=format&fit=crop&w=1200&q=60"
-             alt="Cảnh hoàng hôn trên bãi biển với ánh nắng phản chiếu trên mặt biển" />
-        <img role="listitem"
-             src="https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d?auto=format&fit=crop&w=1200&q=60"
-             alt="Góc làm việc tối giản: bàn, laptop mở, sổ tay và bút" />
-        <img role="listitem"
-             src="https://images.unsplash.com/photo-1517816743773-6e0fd518b4a6?auto=format&fit=crop&w=1200&q=60"
-             alt="Cận cảnh tay đang ghi chú trên sổ, nhìn thấy ngòi bút và chữ viết" />
-      </div>
     </section>
 
-    <!-- Tài nguyên & link ngoài (external link) -->
-    <section id="resources" aria-labelledby="resources-title">
-      <h2 id="resources-title">4. Tài nguyên & Liên kết ngoài</h2>
-      <p>Đây là một liên kết ngoài hợp lệ tới tài liệu HTML/CSS tiêu chuẩn (MDN Web Docs):</p>
-      <p><a class="external" href="https://developer.mozilla.org/vi/docs/Web/HTML" target="_blank" rel="noopener noreferrer">Tài liệu HTML – MDN Web Docs</a></p>
-
-      <h3>Gợi ý kiểm tra</h3>
-      <ol>
-        <li>Validate HTML bằng <a href="https://validator.w3.org/" target="_blank" rel="noopener noreferrer">W3C Markup Validator</a>.</li>
-        <li>Kiểm tra accessibility bằng <a href="https://wave.webaim.org/" target="_blank" rel="noopener noreferrer">WAVE</a> hoặc Lighthouse.</li>
-        <li>Host trên GitHub Pages / Netlify / Vercel và chia sẻ link.</li>
-      </ol>
-    </section>
-  </main>
-
-  <!-- Semantic footer -->
-  <footer role="contentinfo">
-    <p>© 2025 – Trang mẫu dành cho bài tập HTML. Đã tối ưu tiêu đề, alt, cấu trúc semantic và trình tự tiêu đề (h1 → h2 → h3).</p>
-    <p>Hosting gợi ý: <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">GitHub Pages</a> hoặc <a href="https://www.netlify.com/" target="_blank" rel="noopener noreferrer">Netlify</a>.</p>
-  </footer>
+    <footer>
+        <p>© 2025 - Trang web giới thiệu Lionel Messi</p>
+    </footer>
 </body>
 </html>
