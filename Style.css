@@ -2,41 +2,37 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: #111;
-    color: #fff;
+    background-color: #111;
+    color: white;
 }
 
 header {
-    text-align: center;
+    background-color: #1e1e1e;
     padding: 20px;
-    background: #202020;
+    text-align: center;
 }
 
 header h1 {
     margin: 0;
-    font-size: 28px;
 }
 
-.intro {
+#profile {
     text-align: center;
     padding: 20px;
 }
 
-.intro img {
-    width: 280px;
+#profile img {
+    width: 260px;
     border-radius: 15px;
-    margin-bottom: 20px;
-    box-shadow: 0 0 20px #555;
 }
 
-.intro p {
+#profile p {
     max-width: 700px;
-    margin: auto;
-    font-size: 18px;
+    margin: 20px auto;
     line-height: 1.6;
 }
 
-.info, .career {
+section {
     padding: 20px 40px;
 }
 
@@ -45,15 +41,13 @@ h2 {
 }
 
 ul li {
-    margin: 8px 0;
-    font-size: 17px;
+    padding: 6px 0;
 }
 
 footer {
     text-align: center;
     padding: 15px;
-    background: #202020;
+    background-color: #1e1e1e;
     margin-top: 30px;
     font-size: 14px;
-    color: #ccc;
 }
