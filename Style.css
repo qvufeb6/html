@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #111;
+    color: #fff;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background: #202020;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+.intro {
+    text-align: center;
+    padding: 20px;
+}
+
+.intro img {
+    width: 280px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 20px #555;
+}
+
+.intro p {
+    max-width: 700px;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.info, .career {
+    padding: 20px 40px;
+}
+
+h2 {
+    color: #00aaff;
+}
+
+ul li {
+    margin: 8px 0;
+    font-size: 17px;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #202020;
+    margin-top: 30px;
+    font-size: 14px;
+    color: #ccc;
+}
