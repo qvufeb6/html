@@ -1,24 +1,24 @@
 /* Tổng thể */
 body {
     font-family: Arial, sans-serif;
-    background: #f4f6f9;
-    color: #333;
+    background: #eef2f7;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
+    color: #333;
 }
 
 /* Header */
 header {
-    background: #1e88e5;
+    background: linear-gradient(90deg, #005fcc, #0099ff);
     color: white;
-    padding: 25px 10px;
+    padding: 35px 10px;
     text-align: center;
-    font-size: 22px;
+    font-size: 26px;
     font-weight: bold;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
 }
 
-/* Phần nội dung chính */
+/* Main */
 main {
     max-width: 900px;
     margin: auto;
@@ -28,17 +28,23 @@ main {
 /* Section */
 section {
     background: white;
-    padding: 20px;
-    margin-bottom: 25px;
-    border-radius: 12px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 14px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #005fcc;
+    margin-top: 0;
 }
 
 /* Ảnh chính */
 .main-img {
-    max-width: 100%;
-    border-radius: 12px;
+    width: 100%;
+    border-radius: 14px;
     margin-top: 15px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
 }
 
 /* Hàng ảnh */
@@ -49,15 +55,18 @@ section {
 }
 
 .img-row img {
-    width: 48%;
-    border-radius: 12px;
+    width: 50%;
+    border-radius: 14px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
 }
 
 /* Link */
 a {
-    color: #1e88e5;
+    color: #005fcc;
     font-weight: bold;
+    text-decoration: none;
 }
+
 a:hover {
     text-decoration: underline;
 }
@@ -66,8 +75,9 @@ a:hover {
 footer {
     text-align: center;
     padding: 15px;
-    background: #e3eaf2;
+    background: #dfe8f1;
     color: #555;
     margin-top: 20px;
     font-size: 14px;
+    border-top: 1px solid #c7d2de;
 }
