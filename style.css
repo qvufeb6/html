@@ -23,17 +23,17 @@ header {
 }
 
 header h1 {
-    font-size: 38px;
+    font-size: 40px;
     margin: 0;
     letter-spacing: 2px;
     font-weight: bold;
 }
 
-header h2 {
-    font-size: 22px;
-    margin-top: 8px;
-    font-weight: 300;
-    color: white;
+header .sub-title {
+    font-size: 25px;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #FFD700; /* VÀNG KHÔNG TRÙNG MÀU */
 }
 
 /* Main */
@@ -51,7 +51,7 @@ section {
     border-radius: 14px;
     box-shadow: 0 3px 15px rgba(0,0,0,0.1);
 
-    text-align: center; /* CHỮ GIỮA */
+    text-align: center;
 }
 
 h2 {
@@ -59,7 +59,21 @@ h2 {
     margin-top: 0;
 }
 
-/* Ảnh chính */
+/* Ảnh */
 .main-img {
     width: 100%;
     border-radius: 14px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #005fcc;
+    color: white;
+    font-size: 14px;
+    margin-top: 20px;
+}
