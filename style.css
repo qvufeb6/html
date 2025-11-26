@@ -74,3 +74,15 @@ footer {
     font-size: 14px;
     margin-top: 20px;
 }
+.info-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    text-align: left;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.info-list li {
+    margin-bottom: 8px;
+    font-size: 16px;
+}
