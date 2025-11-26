@@ -13,27 +13,20 @@ header {
     color: white;
     padding: 40px 10px;
     text-align: center;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
     box-shadow: 0 3px 12px rgba(0,0,0,0.25);
 }
 
 header h1 {
     font-size: 40px;
     margin: 0;
-    letter-spacing: 2px;
     font-weight: bold;
 }
 
 header .sub-title {
-    font-size: 25px;
-    margin-top: 10px;
+    font-size: 26px;
+    margin-top: 8px;
     font-weight: bold;
-    color: #FFD700; /* VÀNG KHÔNG TRÙNG MÀU */
+    color: #ffeb3b; /* VÀNG NỔI BẬT KHÔNG TRÙNG NỀN */
 }
 
 /* Main */
@@ -51,21 +44,25 @@ section {
     border-radius: 14px;
     box-shadow: 0 3px 15px rgba(0,0,0,0.1);
 
-    text-align: center;
+    text-align: left; /* nội dung KHÔNG căn giữa */
 }
 
-h2 {
+section h2 {
     color: #005fcc;
+    text-align: center; /* chỉ tiêu đề căn giữa */
     margin-top: 0;
+    margin-bottom: 20px;
 }
 
-/* Ảnh */
+/* Ảnh không bị vỡ */
 .main-img {
     width: 100%;
+    height: auto; /* giữ nguyên tỷ lệ ảnh */
     border-radius: 14px;
     margin-top: 15px;
     margin-bottom: 15px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    object-fit: cover; /* tránh méo ảnh */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
 }
 
 /* Footer */
